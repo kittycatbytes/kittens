@@ -5,13 +5,13 @@ Import-Module Microsoft.Online.SharePoint.Powershell -ErrorAction SilentlyContin
 Add-PSSnapIn Microsoft.SharePoint.PowerShell  -ErrorAction SilentlyContinue
 
 
-$SiteUrl = "https://onewri.sharepoint.com/sites/paymentprocessing" 
+$SiteUrl = "[O365 Site Collection URL]" 
 
 
 $UserName = Read-Host -Prompt "Enter User Name"
-portal_admin@onewri.onmicrosoft.com
+username
 $SecurePassword = Read-Host -Prompt "Enter password" -AsSecureString
-@Portal002
+*******
 
 $cred = New-Object -TypeName System.Management.Automation.PSCredential -argumentlist $UserName, $SecurePassword
 
