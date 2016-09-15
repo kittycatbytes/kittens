@@ -4,6 +4,6 @@ Import-Module Microsoft.Online.SharePoint.Powershell -force -verbose
 cd C:\spps_0_2_1
 Import-Module .\spps.features.psm1
 
-$site = "https://usccb.sharepoint.com/sites/ce"
-Initialize-SPPS -siteURL $site -online $true -username "psolutions@usccb.org" -password "Office365SP"
+$site = "[site]"
+Initialize-SPPS -siteURL $site -online $true -username "[creds]" -password "******"
 Enable-Feature -featureId "94c94ca6-b32f-4da9-a9e3-1f3d343d7ecb" -force $true -featureDefinitionScope "Web"
