@@ -1,0 +1,14 @@
+$spweb = get-spwebapplication "http://webapplication" #URL of your web application
+foreach ($site in $spweb.sites){
+$web = get-spweb $site.Url
+$web.sitegroups.remove("Viewers")
+$web.dispose()
+}
+
+
+$spweb = get-spwebapplication "https://staff.usccb.org" 
+foreach ($site in $spweb.sites){
+$web = get-spweb $site.Url
+write-host $web
+$web.dispose()
+}
