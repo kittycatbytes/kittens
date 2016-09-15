@@ -1,8 +1,8 @@
 jQuery(document).ready(function() {
 	//var contentTypeId = "0x0120D520"; default document set content type ID
-	var contentTypeId = "0x0120D520000DF59F1E34CC85458CAE162E6A0D3622"
-	var contentTypeName = "Grants"
-	var listName = "Grants"
+	var contentTypeId = "[Content Type ID -list]"
+	var contentTypeName = "[CT Name]"
+	var listName = "[List name]"
 	var listUrl = _spPageContextInfo.webServerRelativeUrl + "/" + listName;
 	var documentSetDisplayUrl = listUrl + "/Forms/" + encodeURIComponent(contentTypeName) + "/docsethomepage.aspx?ID="
 
@@ -21,7 +21,7 @@ jQuery(document).ready(function() {
 		
 		jQuery.ajax({
 			type: 'GET',
-			url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('Grants')",
+			url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('[List name]')",
 			contentType: 'application/json',
 			headers: {
 				"Accept": "application/json;odata=verbose",
