@@ -6,7 +6,7 @@ $web.dispose()
 }
 
 
-$spweb = get-spwebapplication "https://staff.usccb.org" 
+$spweb = get-spwebapplication "[Site Name]" 
 foreach ($site in $spweb.sites){
 $web = get-spweb $site.Url
 write-host $web
